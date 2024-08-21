@@ -1,0 +1,227 @@
+.main-parent {
+  background-color: rgb(32, 32, 32);
+}
+
+.username-container {
+  display: flex;
+  gap: 5%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+  color: white;
+}
+
+.user-input {
+  margin-top: 3px;
+  font-weight: bold;
+  height: 30%;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  font-size: larger;
+}
+
+.username-display {
+  color: white;
+  font-size: 200%;
+}
+
+.join-container {
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  display: block;
+  gap: 10%;
+  margin-top: 5%;
+}
+
+.main-container {
+  display: flex;
+  gap: 6%;
+  margin-top: 5%;
+  height: 500px;
+}
+
+.create-game-container {
+  margin-left: 10%;
+  width: 40%;
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-top: 5%;
+  gap: 10%;
+  background-color: #19191d;
+}
+
+.profile-avatar {
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.styledButton {
+  padding: 0;
+}
+
+.link-box {
+  width: 100%;
+}
+
+.join-prompt {
+  width: 50%;
+  border-radius: 10px;
+  margin-left: 25%;
+  height: 7%;
+  margin-bottom: 1%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-pin-input {
+  font-weight: bold;
+  width: 30%;
+  height: 10%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: larger;
+}
+
+.logo-img {
+  width: 30%;
+  margin-bottom: 5%;
+}
+
+.logo {
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.join-button {
+  color: white;
+}
+
+.join-button:hover {
+  background-color: rgb(89, 208, 244);
+  transition: 0.7s;
+}
+
+.create-game-button {
+  color: white;
+}
+.create-game-button:hover {
+  background-color: rgb(11, 255, 24);
+  transition: 0.7s;
+}
+
+.create-game-button,
+.join-button,
+.join-prompt {
+  font-weight: bold;
+
+  background: linear-gradient(
+    -45deg,
+    #004524,
+    #0e354c,
+    #276943,
+    #114888,
+    #367229
+  );
+  background-size: 400% 400%;
+  animation: gradientWave 10s ease infinite;
+}
+
+@keyframes gradientWave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Existing CSS */
+
+@media (max-width: 600px) {
+  .main-parent {
+    background-color: rgb(32, 31, 31); /* Ensure readability */
+  }
+
+  .username-container {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px;
+    margin-right: 0; /* Adjust margins for smaller screens */
+    padding: 10px; /* Add padding for better touch interaction */
+  }
+
+  .user-input {
+    width: 90%; /* Increase width to use more space */
+    height: 50px; /* Larger touch area */
+  }
+
+  .username-display {
+    font-size: 150%; /* Adjust font size for smaller screens */
+  }
+
+  .join-container {
+    width: 100%; /* Use full width */
+    margin-top: 10%; /* Increase margin */
+    gap: 5%; /* Reduce gap */
+  }
+
+  .main-container {
+    flex-direction: column; /* Stack horizontally contained items */
+    gap: 20px; /* Increase gap for clarity */
+    height: auto; /* Adjust height based on content */
+  }
+
+  .create-game-container,
+  .join-container {
+    width: 100%; /* Full width for each section */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .top-container {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Adjust height based on content */
+    margin-top: 0; /* Remove top margin */
+    gap: 20px; /* More space between elements */
+  }
+
+  .profile-avatar {
+    width: 100%; /* Full width to align center */
+  }
+
+  .styledButton,
+  .join-button,
+  .create-game-button {
+    width: 90%; /* Make buttons wider to fill space */
+    font-size: 20px; /* Larger font for readability */
+    height: 60px; /* Larger buttons for easier interaction */
+    margin: 10px 0; /* More margin for separation */
+  }
+
+  .logo-img {
+    width: 30%; /* Adjust logo size to fit smaller screens */
+    margin-bottom: 2%; /* Reduce margin */
+  }
+
+  .logo {
+    margin: 10px; /* Increase margin for better visibility */
+  }
+
+  .join-pin-input {
+    font-size: medium; /* Adjust font size for better readability */
+    width: 80%; /* Increase width for easier input */
+    height: 50px; /* Larger input field for easier interaction */
+  }
+}
